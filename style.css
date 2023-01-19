@@ -1,0 +1,140 @@
+*,
+::before,
+::after{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    font-size: 16px;
+    color: #ffff;
+    flex-direction: column;
+}
+.sign_in_box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1440px;
+    background: transparent;
+}
+.top{
+    background: hsl(248, 32%, 49%);
+    padding:18px 40px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 10px;
+    left: 0;
+    bottom: 105%;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 8px 1px hsla(0, 26%, 24%, 0.25);
+}
+.top span{
+    font-weight: 600;
+}
+.left_side{
+    background: none;
+    width: 50%;
+    height: 100%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    position: relative;
+}
+.left_side h1{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.left_side p{
+    font-size: 16px;
+}
+.right_side{
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 8px 1px hsla(0, 26%, 24%, 0.25);
+}
+
+.input-box{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid hsl(246, 25%, 77%);
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+}
+::placeholder{
+    color: hsl(246, 25%, 77%);
+}
+.submit_button{
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    padding: 20px;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 1px hsla(154, 56%, 22%, 0.5);
+    cursor: pointer;
+
+    transition: 1s;
+}
+.submit_button:hover{
+    background: hsl(154, 76%, 63%);
+}
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 17px;
+}
+.terms .terms_cons{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+@media(max-width: 800px) {
+    .container{
+        background: hsl(0, 100%, 74%);
+        background-image: url('images/bg-intro-mobile.png');
+    }
+    .sign_in_box{
+        flex-direction: column;
+    }
+    .left_side{
+        margin-bottom: 150px;
+    }
+    .left_side h1{
+        font-size: 30px;
+        margin-top: 50%;
+        text-align: center;
+    }
+    .left_side p{
+        font-size: 20px;
+        text-align: center;
+        margin-top: -30px;
+    }
+}
+footer{
+    top:100%;
+    color: rgb(56, 48, 48);
+    display: grid;
+    place-items: center;
+    background: hsl(0, 100%, 74%);
+}
