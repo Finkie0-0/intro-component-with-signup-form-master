@@ -1,1 +1,3 @@
-# intro-component-with-signup-form-master
+# Intro-component-with-signup-form-master
+
+- Front end mentor's project design
